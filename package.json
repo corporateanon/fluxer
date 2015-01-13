@@ -1,0 +1,19 @@
+{
+  "name": "fluxer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack test/test.js --output-file=tmp/testBundle.js --config=webpack.config.js --target=node --colors && mocha tmp/testBundle.js",
+    "server": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsx-loader": "^0.12.2",
+    "react": "^0.12.2",
+    "reflux": "^0.2.3",
+    "webpack": "^1.4.15",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
