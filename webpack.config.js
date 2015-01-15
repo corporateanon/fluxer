@@ -25,6 +25,9 @@ module.exports = {
     }, {
       test: /.+\.jsx$/,
       loader: 'jsx',
+      query: {
+        harmony: true,
+      }
     }]
   },
 };
