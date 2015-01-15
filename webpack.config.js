@@ -13,7 +13,7 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /app_modules(\/|\\).+\.js$/,
+      test: /web_modules(\/|\\).+\.js$/,
       loader: 'traceur',
       query: {
         runtime: true,

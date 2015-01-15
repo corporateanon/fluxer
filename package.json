@@ -13,6 +13,7 @@
     "jsx-loader": "^0.12.2",
     "react": "^0.12.2",
     "reflux": "^0.2.3",
+    "traceur-loader": "^0.6.3",
     "webpack": "^1.4.15",
     "webpack-dev-server": "^1.7.0"
   }

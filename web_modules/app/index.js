@@ -1,9 +1,9 @@
-var React = require('react');
-var Reflux = require('reflux');
-var App = require('app/App.jsx');
+import React from 'react';
+import Reflux from 'reflux';
+import App from 'app/App.jsx';
 
-var addItem = Reflux.createAction();
-var itemStore = Reflux.createStore({
+const addItem = Reflux.createAction();
+const itemStore = Reflux.createStore({
   init: function() {
     this.items = [];
     this.listenTo(addItem, this.add);
@@ -18,7 +18,7 @@ var itemStore = Reflux.createStore({
 addItem(1);
 addItem(2);
 
-var app = React.createElement(App, {
+const app = React.createElement(App, {
   itemStore: itemStore,
   addItem: addItem,
 });
